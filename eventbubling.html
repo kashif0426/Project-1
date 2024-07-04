@@ -1,0 +1,24 @@
+<!-- Event Bubbling  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Lorem <strong> ipsum dolor </strong>sit amet consectetur adipisicing elit. Vero, sed sunt reprehenderit ducimus maiores vitae labore itaque perferendis nostrum, dicta aspernatur a minus aut beatae, ab id placeat in voluptatibus!</div>
+    <script>
+        let parent = document.querySelector("div");
+        let child = document.querySelector("strong");
+
+        parent.addEventListener('click', ()=>{
+            console.log("parent")
+        })
+        child.addEventListener('click', ()=>{
+            console.log("child")
+        })
+    </script>
+</body>
+</html>
