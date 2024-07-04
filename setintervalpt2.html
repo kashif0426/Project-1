@@ -1,0 +1,38 @@
+<!-- Set Interval pt2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Motivational Quote</h1>
+    <div id="quoteDisplay">Loading...</div>
+
+    <script>
+      const quote = [
+        "The only way to do a greate job is to love what you do. - Steve Jobs",
+        "Success is not final, Failure is not fatal: is the courage that counts. -Winston Churchill",
+        "The futur belongs to those who belive in the beuty of there dream. -Eleanor Roosevelt",
+        "In order to succeed we it to belive that we can. -Nikos Kazantzakis",
+        "Your time is limited, don't wasted in an  other person's live. -Steve Jobs",
+      ];
+
+      function displayRandomeQuotes(){
+        const quoteDisplay = document.getElementById("quoteDisplay");
+        const randomIndex = Math.floor(Math.random()*quote.length);
+        quoteDisplay.textContent = quote[randomIndex];
+      }
+
+      displayRandomeQuotes();
+
+      function changeQuotePeriodaclly(){
+        displayRandomeQuotes();
+        setTimeout(changeQuotePeriodaclly,10000)
+      }
+
+      changeQuotePeriodaclly();
+    </script>
+  </body>
+</html>
