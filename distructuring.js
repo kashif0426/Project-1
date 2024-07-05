@@ -13,5 +13,4 @@ const {fName,lName,...age} = person;
 
 console.log(fName);
 console.log(lName);
-// console.log(age);
-console.log(left);
+console.log(age);
