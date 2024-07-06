@@ -16,3 +16,5 @@ console.log(student.name);
 console.log(student.studentId);
 
 console.log(person.studentId);
+
+console.log(person.introduce());
