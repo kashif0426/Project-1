@@ -4,7 +4,12 @@
 //oddOrEven(41) = 4+1 = 5 //Odd
 
 function oddishOrEvenish(num){
-    const digits = num.toString().spit();
+    const digits = num.toString().split('').map(Number);
+    console.log(digits);
+
+    const sum = digits.reduce((acc,digit) => acc+digit,0);
+
+    return sum % 2 === 0? "Evenish" : "Oddish";
 }
 
-oddishOrEvenish();
+console.log(oddishOrEvenish(41));
