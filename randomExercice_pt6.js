@@ -20,3 +20,5 @@ function days(month, year){
 }
 
 console.log(days(2,2018));
+console.log(days(4,2018));
+console.log(days(12,2018));
