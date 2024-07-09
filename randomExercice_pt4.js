@@ -6,7 +6,7 @@ function textToNumber(str){
     console.log(words);
 
     let binaryString = words.map(()=>{
-        return word.toLowerCase()=== "one" ? "1" : "0"
+        return words.toLowerCase()=== "one" ? "1" : "0"
     }).join(" ");
 
     const excessLength = binaryString.length % 8;
