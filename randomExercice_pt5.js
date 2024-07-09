@@ -27,6 +27,8 @@ function stringCode(sentence){
     console.log(words);
 
     const consonatCount = words.map(word => countConsonantsAndVoels(word))
+
+    return consonatCount;
 }
 
 console.log(stringCode('Happy Birthday To Me!'))
